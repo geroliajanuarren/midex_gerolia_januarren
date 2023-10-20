@@ -19,7 +19,7 @@
          form {
          padding: 20px;
          width:100%;
-         background:whITE;
+         background:white;
          }
          /* Full-width input fields */
          input[type=text], input[type=number], select {
@@ -44,7 +44,7 @@
          /* Set a style for all buttons */
          button {
          background-color: #0eb7f4;
-         color: whITE;
+         color: white;
          padding: 14px 20px;
          margin: 8px 0;
          border: none;
@@ -160,7 +160,7 @@
           </div>
 		  
 		 
-			<select class = 'bg-whITE' id = 'filterCategory' style = 'border: 1px solid #ddd !important;' onchange = 'filtercatChange()'>
+			<select class = 'bg-white' id = 'filterCategory' style = 'border: 1px solid #ddd !important;' onchange = 'filtercatChange()'>
 					<option>--Filter by Category--</option>
 					<option>See All</option>
 					<option>Food and Beverage</option>
@@ -215,17 +215,18 @@
         return false
       }
 
-      let value = "EVNT-DRV-MID-"
-      count++
-      conc = value + count
-      idInput.value = conc
-
       const obj = {
         id,
         name,
         prodctgr,
         prices
       }
+
+      let value = "EVNT-DRV-MID-"
+      count++
+      conc = value + count
+      idInput.value = conc
+
 
       arr.push(obj)
       if(obj.prodctgr === "Food and Beverage"){
