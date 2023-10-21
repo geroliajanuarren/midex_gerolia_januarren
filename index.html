@@ -191,9 +191,8 @@
       </div>
 	</body>
 
-	<!-- INSERT YOUR CUSTOM JAVASCRIPT HERE -->
-  
 	<script>
+    
     arr = []
 		let count = 1
     let FaB = 0
@@ -207,6 +206,7 @@
 		const prodctgrInput = document.getElementById("prodctgr");
 		const pricesInput = document.getElementById("prices");
 		
+
 		function add() {
       const id = idInput.value
       const name = nameInput.value
@@ -234,11 +234,14 @@
       arr.push(obj)
       if(obj.prodctgr === "Food and Beverage"){
         document.getElementById("FaB").innerHTML = ++FaB
-      }else if(obj.prodctgr === "Kitchen Appliances"){
+      }
+      else if(obj.prodctgr === "Kitchen Appliances"){
         document.getElementById("KA").innerHTML = ++KA
-      }else if(obj.prodctgr === "IT Equipment"){
+      }
+      else if(obj.prodctgr === "IT Equipment"){
         document.getElementById("ITE").innerHTML = ++ITE
-      }else if(obj.prodctgr === "Shoes and Clothing"){
+      }
+      else if(obj.prodctgr === "Shoes and Clothing"){
         document.getElementById("SaC").innerHTML = ++SaC
       }
 
